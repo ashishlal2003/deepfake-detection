@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 def preprocess_images(input_dir, output_dir, img_size=224):
     if not os.path.exists(output_dir):
-        os.mkdir(output_dir)
+        os.makedirs(output_dir)
 
     for filename in tqdm(os.listdir(input_dir)):
         filepath = os.path.join(input_dir, filename)
