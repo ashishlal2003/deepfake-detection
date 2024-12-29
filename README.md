@@ -23,6 +23,8 @@ pip install -r requirements.txt
 ```
 
 ## Model
+You may use the pre-trained model from [Google Drive](https://drive.google.com/file/d/1SlyGpj3PnPdEHd9nd_5WrI3Iwxi0I3kn/view?usp=sharing) or train the model yourself using the below steps.
+
 Run the following command to make the dataset ready for model training:
 
 ```bash
