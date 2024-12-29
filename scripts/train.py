@@ -5,6 +5,10 @@ from torch.utils.data import DataLoader
 from model import DeepfakeDetectorCNN
 from dataset import DeepfakeDataset, transform
 from tqdm import tqdm
+import os
+
+if not os.path.exists('models'):
+    os.makedirs('models')
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}")
